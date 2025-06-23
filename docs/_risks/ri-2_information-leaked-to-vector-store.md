@@ -4,6 +4,10 @@ title: Information Leaked to Vector Store
 layout: risk
 doc-status: Approved-Specification
 type: SEC
+nist-sp-800-53r5_references:
+  - ac-3   # AC-3 Access Enforcement
+  - sc-28  # SC-28 Protection of Information at Rest
+  - au-12  # AU-12 Audit Record Generation
 owasp-llm_references:
   - llm02-2025  # LLM02:2025 Sensitive Information Disclosure
   - llm08-2025  # LLM08:2025 Vector and Embedding Weaknesses

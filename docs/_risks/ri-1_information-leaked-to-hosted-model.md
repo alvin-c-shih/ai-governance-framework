@@ -4,6 +4,10 @@ title: Information Leaked To Hosted Model
 layout: risk
 doc-status: Approved-Specification
 type: RC
+nist-sp-800-53r5_references:
+  - sc-8   # SC-8 Transmission Confidentiality and Integrity
+  - ac-4   # AC-4 Information Flow Enforcement
+  - au-2   # AU-2 Audit Events
 owasp-llm_references:
   - llm02-2025  # LLM02:2025 Sensitive Information Disclosure
 nist-ai-600-1_references:

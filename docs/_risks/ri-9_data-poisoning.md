@@ -4,6 +4,10 @@ title: Data Poisoning
 layout: risk
 doc-status: Approved-Specification
 type: SEC
+nist-sp-800-53r5_references:
+  - si-10  # SI-10 Information Input Validation
+  - si-7   # SI-7 Software, Firmware, and Information Integrity
+  - ac-3   # AC-3 Access Enforcement
 owasp-llm_references:
   - llm03-2025  # LLM03:2025 Supply Chain
   - llm04-2025  # LLM04: Data and Model Poisoning

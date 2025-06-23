@@ -4,6 +4,10 @@ title: Tampering With the Foundational Model
 layout: risk
 doc-status: Approved-Specification
 type: SEC
+nist-sp-800-53r5_references:
+  - sr-3   # SR-3 Supply Chain Controls and Processes
+  - si-7   # SI-7 Software, Firmware, and Information Integrity
+  - sr-6   # SR-6 Supplier Assessments and Reviews
 owasp-llm_references:
   - llm03-2025  # LLM03:2025 Supply Chain
 owasp-ml_references:

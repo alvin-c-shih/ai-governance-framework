@@ -4,6 +4,10 @@ title: Availability of Foundational Model
 layout: risk
 doc-status: Approved-Specification
 type: OP
+nist-sp-800-53r5_references:
+  - sc-5   # SC-5 Denial-of-Service Protection
+  - cp-2   # CP-2 Contingency Plan
+  - sa-9   # SA-9 External System Services
 owasp-llm_references:
   - llm10-2025  # LLM10:2025 Unbounded Consumption
 ffiec-itbooklets_references:

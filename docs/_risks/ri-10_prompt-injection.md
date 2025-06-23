@@ -4,6 +4,10 @@ title: Prompt Injection
 layout: risk
 doc-status: Approved-Specification
 type: SEC
+nist-sp-800-53r5_references:
+  - si-10  # SI-10 Information Input Validation
+  - si-15  # SI-15 Information Output Filtering
+  - ac-4   # AC-4 Information Flow Enforcement
 owasp-llm_references:
   - llm01-2025  # LLM01:2025 Prompt Injection
   - llm04-2025  # LLM04: Data and Model Poisoning
