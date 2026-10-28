@@ -12,6 +12,47 @@ None of the steps is new. Each one matches something that recognised frameworks 
 
 The crosswalk maps *steps of the process*. The AIGF risk and mitigation pages map *individual risks* to the same frameworks.
 
+## The process at a glance
+
+Numbers match the steps below. Solid boxes are covered by files in this folder. Dashed boxes are partly covered, or still to fill in.
+
+```mermaid
+flowchart TD
+  subgraph assess["Assess"]
+    inv["1 Inventory<br/>risk-register.md"] --> idf["2 Identify<br/>risk-register.md<br/>gap-register.md"] --> ana["3 Analyse<br/>scoring-approach.md"] --> eva["4 Evaluate<br/>rating bands"]
+  end
+  subgraph decide["Decide"]
+    trt["5 Treat<br/>address-the-risk.md"] --> res["6 Residual risk<br/>control effectiveness"] --> imp["7 Impact assessment<br/>DPIA, FRIA"] --> gate{"8 Go / no-go"}
+  end
+  subgraph operate["Operate"]
+    mon["9 Monitor<br/>lifecycle-triggers.md"] --> trig{"Trigger?"}
+    trig -- "retire" --> dec["12 Decommission<br/>one trigger"]
+  end
+  subgraph ir["11 Incident response"]
+    det["Detect and triage<br/>severity, re-score"] --> con["Contain<br/>kill switch"] --> pres["Preserve evidence<br/>to fill in: prompts,<br/>decision records, logs"] --> notif["Notify<br/>GDPR 72h covered<br/>to fill in: EU AI Act Art. 73"] --> rec["Recover<br/>to fill in: rollback,<br/>re-validate"] --> pir["Post-incident review<br/>closure trigger"]
+  end
+  eva --> trt
+  gate -- "no-go" --> trt
+  gate -- "go" --> mon
+  trig -- "change, drift,<br/>new risk" --> idf
+  trig -- "incident" --> det
+  pir -- "lessons" --> idf
+  ev[["13–14 Report and keep evidence<br/>assessment-summary.md<br/>acceptance, tests, logs"]]
+  ir -.-> ev
+  classDef assessStep fill:#EEEDFE,stroke:#534AB7,color:#26215C
+  classDef decideStep fill:#E1F5EE,stroke:#0F6E56,color:#04342C
+  classDef operateStep fill:#FAECE7,stroke:#993C1D,color:#4A1B0C
+  classDef partial fill:#FAECE7,stroke:#993C1D,color:#4A1B0C,stroke-dasharray:6 3
+  classDef gap fill:#FFFFFF,stroke:#993C1D,color:#712B13,stroke-dasharray:6 3
+  class inv,idf,ana,eva assessStep
+  class trt,res,imp,gate decideStep
+  class mon,trig,dec,det,con,pir operateStep
+  class notif partial
+  class pres,rec gap
+```
+
+The incident response stages follow common practice. The [CoSAI AI Incident Response Framework](https://www.coalitionforsecureai.org/wp-content/uploads/2026/03/AI-Incident-Response-1.pdf) ([#271](https://github.com/finos/ai-governance-framework/issues/271)) is a good source for the stages marked "to fill in".
+
 ## The steps
 
 | # | Step | What you do | Register files |
@@ -63,6 +104,7 @@ The crosswalk maps *steps of the process*. The AIGF risk and mitigation pages ma
 
 - **Every step has at least two recognised anchors.** The register is not a new method. It is a practical way to carry out what these frameworks ask for, using the AIGF catalogue.
 - **The AI RMF covers every step.** It is the most complete single match, and it is written for AI rather than for IT systems in general.
-- **Strengths beyond the basics:** the kill switch (step 10) and incident-triggered review (step 11) are well developed. They match MANAGE 2.4 and MANAGE 4.3, and EU AI Act Articles 14 and 73, which many internal processes leave out.
+- **Strengths beyond the basics:** the kill switch (step 10) and incident-triggered review (step 11) are well developed. They match MANAGE 2.4 and MANAGE 4.3, and the kill switch matches EU AI Act Article 14, which many internal processes leave out.
+- **Incident response gaps:** preserving evidence and recovery are not yet covered, and notification covers GDPR but not serious-incident reporting under EU AI Act Article 73. The diagram above marks these with dashed boxes.
 - **Evidence (step 14) is the main gap.** The register records each risk and its scores, but not who accepted it and when, the evidence behind each control effectiveness rating, or links to monitoring and decision records (mi-4, mi-9, mi-21). An incident review or an Article 73 report needs all of these. `address-the-risk.md` already asks for the acceptance date and approver, so adding them to each register entry would close most of the gap.
 - **Thin spot:** decommissioning (step 12) has a single trigger. GOVERN 1.7 asks for systems to be phased out "in a manner that does not increase risks", and OSFI E-23 3.6 sets decommissioning standards. This is a good candidate for the next iteration.
