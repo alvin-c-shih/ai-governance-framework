@@ -1,5 +1,8 @@
 # NIST RMF Mapping — AI Risk Register (SP 800-30 Rev. 1 / SP 800-37 Rev. 2 Crosswalk)
 
+> [!WARNING]
+> **Example values only.** The scores, risk levels and authorization recommendations on this page were made up to show how the method works. They are not an AIGF assessment of these risks, and are not guidance on how serious any risk is. Replace them with your own assessment.
+
 Crosswalks every risk's native Likelihood x Impact score onto NIST SP 800-30 Rev. 1's semi-quantitative scale, derives a NIST-style risk level for Inherent and Residual risk, and maps the register's deployment gate onto NIST SP 800-37 Rev. 2's Authorize-step outcomes. See [nist-rmf-scoring.md](nist-rmf-scoring.md) for full definitions, sourcing, and methodology. This is an initial attempt that is currently under review and will be finalized. At this time the approach is to create a crosswalk, eventually this will be part of the risk register for easier implementation and potentially an application will be made available to create and manage the risk register for an enterprise. Some random scores are inserted (generated) to illustrate how the scoring will appear.
 
 ## How This Mapping Works
@@ -21,7 +24,7 @@ Crosswalks every risk's native Likelihood x Impact score onto NIST SP 800-30 Rev
 
 **NIST risk bands** (semi-quantitative, SP 800-30 Rev. 1 Appendix G/I bins): Very Low = 0-4, Low = 5-20, Moderate = 21-79, High = 80-95, Very High = 96-100.
 
-## Risk-Level NIST RMF Mapping
+## Risk-Level NIST RMF Mapping — example values
 
 | ID | Domain | Risk | Likelihood (1-5) | NIST Likelihood Level | NIST Likelihood Score | Impact (1-5) | NIST Impact Level | NIST Impact Score | FIPS 199 Impact Category | NIST Risk Score (Inherent) | NIST Risk Level (Inherent) | Ctrl Effectiveness | Mitigation Factor | NIST Risk Score (Residual) | NIST Risk Level (Residual) | Residual Rating (register) | RMF Authorization Recommendation | Primary NIST 800-53 Control Family |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|

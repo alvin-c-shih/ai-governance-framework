@@ -1,5 +1,8 @@
 # CVSS-Style Mapping — Domain-Recalibrated
 
+> [!WARNING]
+> **Example values only.** The scores and severities on this page were made up to show how the method works. They are not an AIGF assessment of these risks, and are not guidance on how serious any risk is. Replace them with your own assessment.
+
 Rescales the register's Likelihood x Impact scoring onto the open CVSS v3.1 0-10 scale (FIRST.org CVSS v3.1 Specification), then recalibrates that mapping per AI governance risk domain, because CVSS was designed to score a technical vulnerability's exploitability and impact — a concept that fits some AI governance domains far better than others.
 Left in at this time as this addresses vulnerability aspects. NIST-RMF scoring used and a mapping created in addition to address overall risks from industry standards perspective.
 
@@ -45,7 +48,7 @@ Severity bands (official, unchanged): None = 0.0, Low = 0.1-3.9, Medium = 4.0-6.
 | 4 | 0.4 |
 | 5 | 0.25 |
 
-## Risk-Level CVSS Mapping (domain-recalibrated)
+## Risk-Level CVSS Mapping (domain-recalibrated) — example values
 
 Core figures per risk. Where Effective Applicability is not "Applicable", the CVSS-equivalent score is N/A by design — see the Recommended Scoring Adjustment notes that follow the table.
 
@@ -115,7 +118,7 @@ Core figures per risk. Where Effective Applicability is not "Applicable", the CV
 - **R-37** (Data Pipeline): CVSS mapping applies with light down-weighting; native score remains the reference figure for lineage-specific audit findings.
 - **R-38** (Business Outcome): Do not report a CVSS-equivalent score. Score and report on the register's native Likelihood x Impact scale only, and route to business/portfolio governance rather than a security forum.
 
-## Heat Map by AI Governance Domain (recalibrated, control-adjusted)
+## Heat Map by AI Governance Domain (recalibrated, control-adjusted) — example values
 
 Counts each domain's 38 risks by their recalibrated CVSS-Adjusted severity. Domains scored Not Applicable show entirely in the N/A column by design — that is the correct, honest read for a domain this scoring system was never meant to grade, not a data gap.
 

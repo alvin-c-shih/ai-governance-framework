@@ -1,5 +1,8 @@
 # AI Governance Risk Register
 
+> [!WARNING]
+> **Example values only.** The scores, owners and statuses in this register were made up to show how the method works. They are not an AIGF assessment of these risks, and are not guidance on how serious any risk is. Replace them with your own assessment.
+
 Core register: 38 risks across Operational, Security, Regulatory, Agent Operations, Infrastructure & Supply, Data Pipeline, and Business Outcome domains. Each risk carries inherent and residual scoring (Likelihood x Impact, 1-5 each), owner, controls, and status. Referenced against the [FINOS AI Governance Framework risk catalog](https://github.com/finos/ai-governance-framework/tree/main/docs/_risks). Intended to act as framework, will not be exhaustive. There may be gaps that may be addressed in the playbook to ensure all scenarios are covered. Indicated status listed here are illustrative, not actual statuses and may contain domain values of In Progress, Planned, Completed, etc. 
 
 ## R-01 — Hallucination & Inaccurate Outputs

@@ -1,5 +1,8 @@
 # AI Risk Register —  All Markdown Files List
 
+> [!NOTE]
+> The scores in [risk-register.md](risk-register.md), [cvss-mapping.md](cvss-mapping.md) and [nist-rmf-mapping.md](nist-rmf-mapping.md) are example values that show how the method works. They are not an AIGF assessment of any risk.
+
 ## Contents
 
 | Name | MD File | Covers |
