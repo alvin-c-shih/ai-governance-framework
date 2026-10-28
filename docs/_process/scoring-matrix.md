@@ -13,6 +13,7 @@ LIKELIHOOD increases downward, IMPACT increases rightward.
 | 5 | 5 | 10 | 15 | 20 | 25 |
 
 ## Legend
+
 | Range | Rating | Governance Consideration |
 |---|---|---|
 | 1 – 4 | Low | Baseline controls, routine oversight. |
