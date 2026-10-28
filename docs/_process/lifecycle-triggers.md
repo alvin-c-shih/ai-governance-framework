@@ -2,6 +2,8 @@
 
 Defines the lifecycle events that require an AI use case to be assessed or reassessed against the AI Risk Register, the action required, the register risks most affected, and the remediation expectation / SLA.
 
+In the tables below, `R-NN` refers to an entry in the [risk register](risk-register.md). DPIA and FRIA are defined in [terminology-mapping.md](terminology-mapping.md), and the kill switch in [address-the-risk.md](address-the-risk.md#kill-switch--complete-termination-control-of-last-resort).
+
 ## Summary by lifecycle stage
 
 | Lifecycle Stage | # Triggers |
@@ -57,7 +59,7 @@ Defines the lifecycle events that require an AI use case to be assessed or reass
 |---|---|---|---|---|
 | 1 | Scheduled quarterly / annual governance review | Refresh all scores; verify control effectiveness; re-confirm owners | All | Fold findings into next review cycle; expedite if severity High+ |
 | 2 | Regulatory change (new law, guidance, or enforcement) | Re-map use cases to regulation; reassess compliance posture | R-22, R-23, R-24, R-07 | Fold findings into next review cycle; expedite if severity High+ |
-| 3 | Benchmark reassessment due (per section / per stage cadence) | Recompute section & stage benchmarks; investigate any GAP status; recalibrate targets if the benchmark itself is stale | All — via Benchmarks tab | Fold findings into next review cycle; expedite if severity High+ |
+| 3 | Benchmark reassessment due (per section / per stage cadence) | Recompute section & stage benchmarks; investigate any GAP status; recalibrate targets if the benchmark itself is stale | All — via [benchmarks](illustrative-benchmark.md) | Fold findings into next review cycle; expedite if severity High+ |
 | 4 | Coverage gap identified — exposure with no matching FINOS AIR risk | Log in Gap Register; add new register row with Coverage=GAP; disposition; feed material gaps back to FINOS community | New / emerging risks | Fold findings into next review cycle; expedite if severity High+ |
 
 ## Incident-Triggered Review

@@ -26,7 +26,7 @@ A benchmark is a target threshold for a section (domain) or a lifecycle stage. S
 | Onboarding / Intake | % new use cases with completed intake assessment | 100% | Pending | Per intake | AI Governance |
 | Design / Build | % designs with controls mapped to identified risks | 100% | Pending | Per build | ML Platform Lead |
 | Pre-Deployment Gate | Gate pass-rate at first submission | 90% | Pending | Per release | Governance forum |
-| Pre-Deployment Gate | % connected-agent chains with rollback + kill-switch tested | 100% | Pending | Per release | Head of AI Governance |
+| Pre-Deployment Gate | % connected-agent chains with rollback + [kill switch](address-the-risk.md#kill-switch--complete-termination-control-of-last-resort) tested | 100% | Pending | Per release | Head of AI Governance |
 | Production / Operate | % systems within drift threshold | 95% | Pending | Monthly | ML Platform Lead |
 | Production / Operate | Mean time to detect outcome deviation (hrs) | 24 | Pending | Monthly | ML Platform Lead |
 | Incident-Triggered Review | % incidents with register re-scored within SLA | 100% | Pending | Per incident | AI Governance |

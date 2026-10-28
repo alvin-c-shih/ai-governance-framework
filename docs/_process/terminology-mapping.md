@@ -8,7 +8,7 @@ Shared glossary reconciling common governance terms with FINOS / NIST / EU AI Ac
 | Residual Risk | Exposure remaining after controls are applied. | Net risk; managed risk | ISO 31000; NIST AI RMF (Manage) |
 | Likelihood | Probability the risk event occurs in the assessment period. | Probability; frequency | 5×5 matrix (this register) |
 | Impact | Severity of consequence if the event occurs. | Consequence; severity; magnitude | 5×5 matrix (this register) |
-| Risk Rating | Band (Low/Moderate/High/Critical) derived from the score. | Risk level; severity tier | FINOS heuristic tiers |
+| Risk Rating | Band (Low/Moderate/High/Critical) derived from the score. | Risk level; severity tier | [FINOS heuristic tiers](https://air-governance-framework.finos.org/heuristic-assessment.html) |
 | Risk Tolerance | Level of residual risk the organisation will accept. | Risk appetite; acceptance threshold | NIST AI RMF (Govern) |
 | Deployment Gate | Go/no-go control point comparing residual risk to tolerance. | Release gate; approval gate; stage gate | FINOS adoption path |
 | Hallucination | Confident but fabricated/incorrect model output. | Confabulation; ungrounded output | FINOS AIR-OP-004 |

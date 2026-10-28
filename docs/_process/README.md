@@ -5,6 +5,8 @@
 
 ## Contents
 
+New to the terms? Start with [Terminology Mapping](terminology-mapping.md), the glossary for this folder.
+
 | Name | MD File | Covers |
 |---|---|---|
 |- Risk Register Notes | [risk-register-notes.md](risk-register-notes.md)| Separated from README.md has notes on the approach|

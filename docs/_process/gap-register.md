@@ -1,5 +1,7 @@
 # Gap Register — Risks Not Addressed by FINOS AIGF
 
+`R-NN` in the Register ID column refers to an entry in the [risk register](risk-register.md). `r-N` refers to a risk in the [AIGF risk catalogue](https://github.com/finos/ai-governance-framework/tree/main/docs/_risks), for example `r-19` is `ri-19`.
+
 | Gap ID | Gap / Missing Risk | How Surfaced | Why FINOS Doesn't Cover It | Disposition | Register ID | Date Added | Reassess |
 |---|---|---|---|---|---|---|---|
 | G-01 | Pattern-Shift Rejected as Anomaly | Benchmark review — drift metric flagged sustained 'anomaly' clusters | FINOS r-19 covers drift/decay but not the agent actively rejecting a legitimate new-normal as an outlier and failing to adapt. | Added to register | R-27 | 2026-06-30 | Quarterly |

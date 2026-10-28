@@ -5,6 +5,24 @@
 
 Core register: 38 risks across Operational, Security, Regulatory, Agent Operations, Infrastructure & Supply, Data Pipeline, and Business Outcome domains. Each risk carries inherent and residual scoring (Likelihood x Impact, 1-5 each), owner, controls, and status. Referenced against the [FINOS AI Governance Framework risk catalog](https://github.com/finos/ai-governance-framework/tree/main/docs/_risks). Intended to act as framework, will not be exhaustive. There may be gaps that may be addressed in the playbook to ensure all scenarios are covered. Indicated status listed here are illustrative, not actual statuses and may contain domain values of In Progress, Planned, Completed, etc. 
 
+## Fields
+
+Each entry below uses these fields:
+
+| Field | Meaning |
+|---|---|
+| FINOS Ref | The matching risk in the [AIGF risk catalogue](https://github.com/finos/ai-governance-framework/tree/main/docs/_risks), if there is one |
+| Domain | One of seven groups of risk. See the [domain table](cvss-mapping.md#ai-governance-domain--cvss-applicability-lookup) |
+| Likelihood, Impact | Scored 1–5. See the [scales](scoring-approach.md#inherent-risk--likelihood-x-impact) |
+| Inherent, Inherent Rating | Likelihood × Impact, and its [rating band](scoring-approach.md#rating-bands) |
+| Threshold | The tolerance for this use case, used at the [deployment gate](scoring-approach.md#risk-tolerance-deployment-gate-go--no-go). Left blank here |
+| Existing Controls, Ctrl Effectiveness | The controls in place, and how well they work on a 1–5 scale. See [control effectiveness](scoring-approach.md#control-effectiveness-and-residual-risk) |
+| Residual, Residual Rating | The risk left after controls: Inherent × mitigation factor, and its [rating band](scoring-approach.md#rating-bands) |
+| Treatment | Mitigate, transfer, avoid or accept. See [options to address](address-the-risk.md#options-to-address) |
+| Owner, Status | Who is accountable, and progress. Example values only |
+| FINOS Coverage | How well the AIGF catalogue covers this risk: FINOS, FINOS-adjacent or GAP. Risks marked GAP are explained in the [gap register](gap-register.md) |
+| Stack Layer | Where the risk sits in the 10-layer AI stack, L1 (hardware) to L10 (end user). See [stack coverage](stack-coverage.md#layer-by-layer-coverage) |
+
 ## R-01 — Hallucination & Inaccurate Outputs
 
 - **FINOS Ref (if available):** ri-4

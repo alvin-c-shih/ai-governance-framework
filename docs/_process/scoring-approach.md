@@ -33,7 +33,7 @@ Inherent risk is the exposure before mitigating controls are credited. Score Lik
 | 1 – 4 | Low | Acceptable with baseline controls and routine oversight. |
 | 5 – 9 | Moderate | Acceptable with standard guardrails, monitoring, and periodic review. |
 | 10 – 15 | High | Deploy only with mandatory controls, approval gates, and active monitoring. |
-| 16 – 25 | Critical | Do not deploy as-is, redesign to reduce exposure or require human-in-the-loop. Go-no-go. (if deployed - Kill) |
+| 16 – 25 | Critical | Do not deploy as-is, redesign to reduce exposure or require human-in-the-loop. Go-no-go. (if deployed - [kill switch](address-the-risk.md#kill-switch--complete-termination-control-of-last-resort)) |
 
 ## Control Effectiveness and Residual Risk
 
@@ -58,4 +58,4 @@ Governance forum reviews and escalates/makes decision on residual risk.
 | Low | Accept | PASS | Proceed | Product / risk owner |
 | Moderate | Accept w/ monitoring | PASS | Proceed with conditions | AI governance lead |
 | High | Mitigate before deploy | CONDITIONAL | Controls must close gap | Governance forum / CRO delegate |
-| Critical | Avoid / redesign | FAIL | Block deployment/Kill | Governance forum + accountable executive |
+| Critical | Avoid / redesign | FAIL | Block deployment / [kill switch](address-the-risk.md#kill-switch--complete-termination-control-of-last-resort) | Governance forum + accountable executive |
